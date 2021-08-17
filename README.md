@@ -31,7 +31,7 @@ Run the setup script. This will install the homebrew dependencies
 - `bash setup.sh`
 
 This will generate the wildcard certificates at the root of the project. They
-are already added to `.gitignore` so you can safely generate as certificates
+are already added to `.gitignore` so you can safely generate as many certificates
 and domains as you like.
 
 ## Teardown
@@ -71,9 +71,9 @@ We'll use the sample `default-app` to demonstrate how this can be done.
 
 ### Customize the TLD's (domain suffixes)
 
-In order to create TLS certificates and for dnsmasq to recognize a domain other than
+In order to create TLS certificates, and for dnsmasq to recognize a domain other than
 `.test` or `.xyz`, you'll need to modify the `setup.sh` file to add your specific
-TLD and modify your `Caddyfile` to use the correct certs and TLD.
+TLD, and modify your `Caddyfile` to use the correct certs and TLD.
 
 Change the following line by adding or replacing your custom TLD, separated by a `/`:
 
