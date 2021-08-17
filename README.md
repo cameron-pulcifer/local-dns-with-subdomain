@@ -79,6 +79,11 @@ Change the following line by adding or replacing your custom TLD, separated by a
 
 - `address=/.test/.xyz/127.0.0.1` => `address=/.test/.xyz/.local/.fake/127.0.0.1`
 
+For a new TLD (domain extension), add a new line to generate the resolver file:
+
+- `sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/fake'`
+- `sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/local'`
+
 Add new wildcard certificates for your TLD by appending to the end of the file:
 
 ```
