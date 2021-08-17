@@ -1,0 +1,9 @@
+api.developer.test:443 {
+  tls ../_wildcard.developer.test.pem ../_wildcard.developer.test-key.pem
+  reverse_proxy localhost:8080
+}
+
+my-app.developer.test:443 {
+  tls ../_wildcard.developer.test.pem ../_wildcard.developer.test-key.pem
+  reverse_proxy localhost:3000
+}
